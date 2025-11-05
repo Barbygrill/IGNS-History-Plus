@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ignshistory_plus",
+  "version": "v0.1-1.21",
+  "name": "IGNSHistory+",
+  "description": "Client-side mod to view previous players names and UUID - /names <> - /igns <>",
+  "authors": ["Barbygrill"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/igns-history-plus",
+    "sources": "https://github.com/Barbygrill/IGNS-History-Plus"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.barby.ignshistoryplus.IgnsHistoryPlus"
+    ],
+    "client": [
+      "com.barby.ignshistoryplus.IgnsHistoryPlusClient"
+    ]
+  },
+  "mixins": [
+    "ignshistory_plus.mixins.json"
+  ],
+  "icon": "assets/ignshistory_plus/icon.png",
+  "depends": {
+    "fabricloader": ">=0.16.2",
+    "fabric": "*",
+    "minecraft": "1.21.x"
+  }
+}
